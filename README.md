@@ -20,7 +20,7 @@ Example (appSettings)
 Example (connectionStrings)
 
     //To write the connection string
-    string connStr = @"Data Source=.;Initial Catalog=nitin;User ID=nitin;Password=nitin";
+    string connStr = @"Data Source=localhost;Initial Catalog=testdb;User ID=nitin;Password=red";
     new ConnectionStringHelper()["DbConn"] = connStr;
     
     //To read the connection string
