@@ -9,6 +9,16 @@ namespace ConfigUtilities
     /// <summary>
     /// Provides a simple means of reading connection strings from and writing connection strings to the application's configuration file
     /// </summary>
+    /// <example>
+    /// <code>
+    /// //To write the connection string
+    /// string connStr = @"Data Source=.;Initial Catalog=nitin;User ID=nitin;Password=nitin";
+    /// new ConnectionStringHelper()["DbConn"] = connStr;
+    /// 
+    /// //To read the connection string
+    /// var connStr = new ConnectionStringHelper()["DbConn"]
+    /// </code>
+    /// </example>
     public class ConnectionStringHelper : BaseConfigHelper<ConnectionStringHelper>
     {
         /// <summary>

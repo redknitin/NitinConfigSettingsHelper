@@ -9,6 +9,15 @@ namespace ConfigUtilities
     /// <summary>
     /// Provides a simple means of reading from and writing to the application's configuration file
     /// </summary>
+    /// <example>
+    /// <code>
+    /// //To write the appSetting
+    /// new ConfigHelper()["themeName"] = "nitin";
+    /// 
+    /// //To read the appSetting
+    /// var connStr = new ConfigHelper()["themeName"]
+    /// </code>
+    /// </example>
     public class ConfigHelper : BaseConfigHelper<ConfigHelper>
     {
         /// <summary>
